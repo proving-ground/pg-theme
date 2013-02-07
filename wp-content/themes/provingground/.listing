@@ -1,0 +1,17 @@
+drwxrwxrwx    4 provingg   provingg         4096 Jul 25 14:51 .
+drwxrwxrwx    5 provingg   provingg         4096 Jul 23 15:49 ..
+drwxrwxrwx    6 provingg   provingg         4096 Jul 23 15:51 assets
+-rw-r--r--    1 provingg   provingg          842 Jul 23 12:33 content-page.php
+-rw-r--r--    1 provingg   provingg         2141 Aug 23 12:03 content-single.php
+-rw-r--r--    1 provingg   provingg         2467 Aug 23 13:53 content.php
+-rw-r--r--    1 provingg   provingg          823 Aug 27 14:47 footer.php
+-rw-r--r--    1 provingg   provingg        22172 Jul 21 09:38 functions.php
+-rw-r--r--    1 provingg   provingg         5384 Aug 22 13:49 header.php
+-rw-r--r--    1 provingg   provingg        14442 Sep  6 10:13 homepage.php
+drwxrwxrwx    3 provingg   provingg         4096 Jul 23 15:51 inc
+-rw-r--r--    1 provingg   provingg         1771 Aug 23 13:52 index.php
+-rw-r--r--    1 provingg   provingg          536 Jul 20 19:09 page.php
+-rw-r--r--    1 provingg   provingg       219152 Jul 20 19:09 screenshot.png
+-rw-r--r--    1 provingg   provingg          814 Jul 21 09:40 sidebar.php
+-rw-r--r--    1 provingg   provingg          834 Jul 21 09:41 single.php
+-rw-r--r--    1 provingg   provingg        13757 Sep  5 10:59 style.css

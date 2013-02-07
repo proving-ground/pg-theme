@@ -1,0 +1,161 @@
+@font-face {
+  font-family: 'MarydaleRegular';
+  src: url('../font/marydale/23765F_0_0.eot');
+  src: url('../font/marydale/23765F_0_0.eot?#iefix') format('embedded-opentype'), url('../font/marydale/23765F_0_0.woff') format('woff'), url('../font/marydale/23765F_0_0.ttf')
+    format('truetype');
+}
+
+@font-face {
+  font-family: 'MarydaleBold';
+  src: url('../font/marydale/23765F_1_0.eot');
+  src: url('../font/marydale/23765F_1_0.eot?#iefix') format('embedded-opentype'), url('../font/marydale/23765F_1_0.woff') format('woff'), url('../font/marydale/23765F_1_0.ttf')
+    format('truetype');
+}
+
+@font-face {
+  font-family: 'MarydaleBlack';
+  src: url('../font/marydale/23765F_2_0.eot');
+  src: url('../font/marydale/23765F_2_0.eot?#iefix') format('embedded-opentype'), url('../font/marydale/23765F_2_0.woff') format('woff'), url('../font/marydale/23765F_2_0.ttf')
+    format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(../font/lato/lato.woff) format('woff');
+}
+
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  background-color: #f3f3f4;
+  font-family: Lato, sans-serif;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: MarydaleRegular, sans-serif;
+  font-weight: lighter;
+  font-size: 250%;
+}
+
+hr {
+  border: 0;
+  height: 17px;
+  background-image: url(../img/horizontal_line.png);
+}
+
+.navbar-inner {
+  min-height: 30px;
+  background-color: #f03523;
+  background-image: none;
+  background-repeat: repeat-x;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  filter: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.navbar .nav .active>a,.navbar .nav .active>a:hover {
+  color: #f03523;
+  text-decoration: none;
+  background-color: #f3f3f4;
+}
+
+.navbar .nav>li>a {
+  text-shadow: none;
+  color: #000;
+  text-transform: uppercase;
+  border: 0;
+}
+
+.extern {
+  float:right;
+  font-family: MarydaleRegular, sans-serif;
+  color: #f03523;
+}
+
+.extern:hover {
+  text-decoration: none;
+  color: #f03523;
+}
+
+.nav>li>p {
+  padding: 0;
+  display: none;
+}
+
+.nav .active>p {
+  display: block;
+}
+
+.nav-tabs > li > a, .nav-pills > li > a {
+  padding: 10px 0;
+}
+
+.pitch {
+  line-height: 25px;
+  padding-right: 20px;
+}
+
+.nav-tabs.nav-stacked > li > a {
+  border: 0;
+  color: #000;
+}
+
+.nav-tabs.nav-stacked > li > a:before {
+  content:url(../img/blackbox.png);
+  float:left;
+  margin:0 5px 0 0;
+}
+
+.nav-tabs.nav-stacked > .active > a:before {
+  content:url(../img/redbox.png);
+}
+
+.nav-tabs.nav-stacked > .active > a {
+  color: #f03523;
+}
+
+.nav-tabs.nav-stacked > li > a:hover {
+  border: 0;
+  color: #f03523;
+  background-color: inherit;
+}
+
+.nav-tabs > .active > a, .nav-tabs > .active > a:hover {
+  background-color: inherit;
+}
+
+.whatwedo a {
+  text-transform: uppercase;
+  font-size: 130%;
+  font-weight: bold;
+}
+
+.whatwevedone a {
+  font-family: MarydaleRegular, sans-serif;
+  font-size: 130%;
+  line-height: 100%;
+}
+
+.bottombar {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 80%;
+}
+
+.bottombar a {
+  color: #fff !important;
+}
+
+.bottombar .copyright {
+  margin: 8px 10px 0 0;
+}

@@ -1,0 +1,706 @@
+/*
+Theme Name: Proving Ground
+Author: Sean K. Stewart
+Author URI: http://www.seankstewart.com
+Description: Custom wordpress theme for Proving Ground
+Version: 1.0
+Tags: 
+*/
+
+/* @import url('../twentyeleven/style.css'); */
+@import url('assets/css/bootstrap.css');
+@import url('assets/css/bootstrap-responsive.css');
+@import url('assets/css/pg.css');
+
+
+/* global site styles */
+html, body {
+	height:100%;
+	background:#fff;
+}
+
+body {padding-bottom:0;}
+#wrapper {
+   min-height:100%;
+   position:relative;
+}
+#content {
+   padding:10px;
+   padding-bottom:39px;   /* Height of the footer */
+}
+#footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:39px;   /* Height of the footer */
+}
+
+
+a, a:hover {
+	color:#ea4130;
+}
+div:after {
+    clear: both;
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.logo {
+	margin-bottom:3em;
+}
+
+.row {
+	margin-bottom:1.5em;
+}
+img[class*="span"] {
+	margin-left:0;
+	margin-right:10px;
+}
+img[class="span1"] {
+	width:30%;
+}
+img[class="span2"] {
+	width:40%;
+}
+img[class="span3"] {
+	width:60%;
+}
+
+/* Assistive text */
+.assistive-text {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+}
+#access a.assistive-text:active,
+#access a.assistive-text:focus {
+	background: #eee;
+	border-bottom: 1px solid #ddd;
+	color: #1982d1;
+	clip: auto !important;
+	font-size: 12px;
+	position: absolute;
+	text-decoration: underline;
+	top: 0;
+	left: 7.6%;
+}
+
+
+/* Main Navigation styles */
+.navbar .nav > li.current-menu-item, .navbar .nav > li.current-menu-item > a, .navbar .nav > li.current-menu-item > a:hover {
+	background:#fff;
+	color:#ea4130 !important;
+}
+
+
+/* Homepage styles */
+.home h2 {
+	font-family: MarydaleRegular, sans-serif;
+	font-weight: lighter;
+	font-size: 250%;
+}
+.home .nav-tabs li p:last-child {
+	margin-bottom:1.5em;
+}
+.home .nav-tabs.nav-stacked > .active > a:before {
+    content: url("assets/img/redbox.png");
+}
+.home .nav-tabs.nav-stacked > li > a:before {
+    content: url("assets/img/blackbox.png");
+}
+.home .span5 .span1, .home .span5 .span4 {
+	margin-left:0;
+}
+.home .entry-title {
+	font-size:130%;
+	line-height:1.2;
+}
+.home .span4 {
+	margin-bottom:16px;
+}
+.home .postlist_author {
+	margin-bottom:8px;
+}
+.home .span1 {
+	margin-top:-6px;
+}
+
+/* default page template styels */
+.page-template-default .entry-content > p:first-child, #blog-intro, .pitch {
+	font-size:1.2em;
+	line-height:25px;
+}
+
+/* Entry styles */
+.hentry {
+	margin-bottom:2em;
+	padding-bottom:1em;
+	clear:both;
+}
+.blog .hentry .continue-reading {
+	float:right;
+	position:relative;
+	top:2.1em;
+}
+a.continue-reading, .edit-link a, .comments-link a {
+	font-style:italic;
+}
+
+.blog h1, .page .entry-title, .home.page h2 {
+  padding-top:.5em;
+  font-family: MarydaleRegular, sans-serif;
+  font-weight: lighter;
+  font-size: 250%;
+}
+.blog .entry-title, .page h2 {
+  font-weight: lighter;
+  font-size: 150%;
+  font-weight:bold;
+  line-height:1.2;
+  font-family:'Lato';
+  text-transform:uppercase;
+}
+.hentry h2 + h3 {	  
+	font-size:1.1em;
+}
+.entry-header a, .entry-title a {
+	position:relative;
+	top:-0.25em;
+	color:#000 !important;
+	font-family:Lato;
+}
+.entry-date, .extern {
+	font-size:1.2em;
+	font-family: MarydaleRegular, sans-serif;
+	text-decoration:none;
+}
+.entry-meta .sep {
+	color:#ea4130;
+}
+.entry-meta time {
+	display:block;
+	margin-top:10px;
+}
+textarea#comment {
+	width:100%;
+}
+.hentry .box {
+	background: none repeat scroll 0 0 #FAFAFA;
+    border: 1px solid #E7E7E7;
+    margin: 15px 0 25px;
+    padding: 8px 10px;
+}
+
+/* Alignment */
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.625em;
+}
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.625em;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+img.alignleft,
+img.alignright,
+img.aligncenter {
+	margin-bottom: 1.625em;
+}
+
+/* box styles */
+.box img.alignleft,
+.box img.alignright,
+.box img.aligncenter {
+	margin-bottom: 0;
+}
+
+/* post navigation styles */
+.nav-previous, .nav-next {
+	white-space:nowrap;
+}
+.nav-previous {
+	float: left;
+	width: 50%;
+}
+.nav-next {
+	float: right;
+	text-align: right;
+	width: 50%;
+}
+#content nav .meta-nav {
+	font-weight: normal;
+}
+
+/* Singular navigation */
+#nav-single {
+	float: right;
+	position: relative;
+	top: -0.3em;
+	text-align: right;
+	z-index: 1;
+}
+#nav-single .nav-previous,
+#nav-single .nav-next {
+	float: none;
+	width: auto;
+}
+#nav-single .nav-next {
+	padding-left: .5em;
+}
+
+
+/* Footer styles */
+.copyright {
+	float:left;
+	margin-right:1em;
+	margin-bottom:0;
+	line-height:19px;
+	color:#FFFFFF;
+}
+
+.whatwevedone .nav-tabs > li > a {	
+	font-size:180%;	
+	line-height:120%;
+}
+
+
+.commentlist {
+	list-style: none;
+	margin: 0 auto;
+	width: 68.9%;
+}
+.content .commentlist,
+.page-template-sidebar-page-php .commentlist {
+	width: 100%; /* reset the width for the one-column and sidebar page layout */
+}
+.commentlist > li.comment {
+	background: #f6f6f6;
+	border: 1px solid #ddd;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	margin: 0 0 1.625em;
+	padding: 1.625em;
+	position: relative;
+}
+.commentlist .pingback {
+	margin: 0 0 1.625em;
+	padding: 0 1.625em;
+}
+.commentlist .children {
+	list-style: none;
+	margin: 0;
+}
+.commentlist .children li.comment {
+	background: #fff;
+	border-left: 1px solid #ddd;
+	-moz-border-radius: 0 3px 3px 0;
+	border-radius: 0 3px 3px 0;
+	margin: 1.625em 0 0;
+	padding: 1.625em;
+	position: relative;
+}
+.commentlist .children li.comment .fn {
+	display: block;
+}
+.comment-meta .fn {
+	font-style: normal;
+}
+.comment-meta {
+	color: #666;
+	font-size: 12px;
+	line-height: 2.2em;
+}
+.commentlist .children li.comment .comment-meta {
+	line-height: 1.625em;
+	margin-left: 50px;
+}
+.commentlist .children li.comment .comment-content {
+	margin: 1.625em 0 0;
+}
+.comment-meta a {
+	font-weight: bold;
+}
+.comment-meta a:focus,
+.comment-meta a:active,
+.comment-meta a:hover {
+}
+.commentlist .avatar {
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-box-shadow: 0 1px 2px #ccc;
+	-moz-box-shadow: 0 1px 2px #ccc;
+	box-shadow: 0 1px 2px #ccc;
+	left: -50px;
+	padding: 0;
+	position: absolute;
+	top: 0;
+}
+/*
+.commentlist > li:before {
+	content: url(images/comment-arrow.png);
+	left: -21px;
+	position: absolute;
+}
+*/
+.commentlist > li.pingback:before {
+	content: '';
+}
+.commentlist .children .avatar {
+	background: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	left: 2.2em;
+	padding: 0;
+	top: 2.2em;
+}
+a.comment-reply-link {
+	background: #eee;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	color: #666;
+	display: inline-block;
+	font-size: 12px;
+	padding: 0 8px;
+	text-decoration: none;
+}
+a.comment-reply-link:hover,
+a.comment-reply-link:focus,
+a.comment-reply-link:active {
+	background: #888;
+	color: #fff;
+}
+a.comment-reply-link > span {
+	display: inline-block;
+	position: relative;
+	top: -1px;
+}
+
+/* Post author highlighting */
+.commentlist > li.bypostauthor {
+	background: #ddd;
+	border-color: #d3d3d3;
+}
+.commentlist > li.bypostauthor .comment-meta {
+	color: #575757;
+}
+.commentlist > li.bypostauthor .comment-meta a:focus,
+.commentlist > li.bypostauthor .comment-meta a:active,
+.commentlist > li.bypostauthor .comment-meta a:hover {
+}
+.commentlist > li.bypostauthor:before {
+	content: url(images/comment-arrow-bypostauthor.png);
+}
+
+/* Post Author threaded comments */
+.commentlist .children > li.bypostauthor {
+	background: #ddd;
+	border-color: #d3d3d3;
+}
+
+/* sidebar-page.php comments */
+/* Make sure we have room for our comment avatars */
+.page-template-sidebar-page-php .commentlist > li.comment,
+.page-template-sidebar-page-php.commentlist .pingback {
+	margin-left: 102px;
+	width: auto;
+}
+/* And a full-width comment form */
+.page-template-sidebar-page-php #respond {
+	width: auto;
+}
+
+/* Comment Form */
+#respond {
+	background: #ddd;
+	border: 1px solid #d3d3d3;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	margin: 0 auto 1.625em;
+	padding: 1.625em;
+	position: relative;
+	width: 68.9%;
+}
+#respond input[type="text"],
+#respond textarea {
+	background: #fff;
+	border: 4px solid #eee;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: inset 0 1px 3px rgba(204,204,204,0.95);
+	-moz-box-shadow: inset 0 1px 3px rgba(204,204,204,0.95);
+	box-shadow: inset 0 1px 3px rgba(204,204,204,0.95);
+	position: relative;
+	padding: 3px;
+	text-indent: 80px;
+}
+#respond .comment-form-author,
+#respond .comment-form-email,
+#respond .comment-form-url,
+#respond .comment-form-comment {
+	position: relative;
+}
+#respond .comment-form-author label,
+#respond .comment-form-email label,
+#respond .comment-form-url label,
+#respond .comment-form-comment label {
+	background: #eee;
+	-webkit-box-shadow: 1px 2px 2px rgba(204,204,204,0.8);
+	-moz-box-shadow: 1px 2px 2px rgba(204,204,204,0.8);
+	box-shadow: 1px 2px 2px rgba(204,204,204,0.8);
+	color: #555;
+	display: inline-block;
+	font-size: 13px;
+	left: 4px;
+	min-width: 60px;
+	padding: 4px 10px;
+	position: relative;
+	top: 40px;
+	z-index: 1;
+}
+#respond input[type="text"]:focus,
+#respond textarea:focus {
+	text-indent: 0;
+	z-index: 1;
+}
+#respond textarea {
+	resize: vertical;
+	width: 95%;
+}
+#respond .comment-form-author .required,
+#respond .comment-form-email .required {
+	color: #bd3500;
+	font-size: 22px;
+	font-weight: bold;
+	left: 75%;
+	position: absolute;
+	top: 45px;
+	z-index: 1;
+}
+#respond .comment-notes,
+#respond .logged-in-as {
+	font-size: 13px;
+}
+#respond p {
+	margin: 10px 0;
+}
+#respond .form-submit {
+	float: right;
+	margin: -20px 0 10px;
+}
+#respond input#submit {
+	background: #222;
+	border: none;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+	box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+	color: #eee;
+	cursor: pointer;
+	font-size: 15px;
+	margin: 20px 0;
+	padding: 5px 42px 5px 22px;
+	position: relative;
+	left: 30px;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
+}
+#respond input#submit:active {
+	background: #1982d1;
+	color: #bfddf3;
+}
+#respond #cancel-comment-reply-link {
+	color: #666;
+	margin-left: 10px;
+	text-decoration: none;
+}
+#respond .logged-in-as a:hover,
+#respond #cancel-comment-reply-link:hover {
+	text-decoration: underline;
+}
+.commentlist #respond {
+	margin: 1.625em 0 0;
+	width: auto;
+}
+#reply-title {
+	color: #373737;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 30px;
+}
+#cancel-comment-reply-link {
+	color: #888;
+	display: block;
+	font-size: 10px;
+	font-weight: normal;
+	line-height: 2.2em;
+	letter-spacing: 0.05em;
+	position: absolute;
+	right: 1.625em;
+	text-decoration: none;
+	text-transform: uppercase;
+	top: 1.1em;
+}
+#cancel-comment-reply-link:focus,
+#cancel-comment-reply-link:active,
+#cancel-comment-reply-link:hover {
+	color: #ff4b33;
+}
+#respond label {
+	line-height: 2.2em;
+}
+#respond input[type=text] {
+	display: block;
+	height: 24px;
+	width: 75%;
+}
+#respond p {
+	font-size: 12px;
+}
+p.comment-form-comment {
+	margin: 0;
+}
+.form-allowed-tags {
+	display: none;
+}
+
+
+
+
+
+
+@media (max-width: 979px) {
+	body {
+		padding-top: 0;
+	}
+	.nav-collapse,
+	.nav-collapse.collapse {
+		height: auto;
+		overflow: hidden;
+	}
+	.row {
+		margin-bottom:3em;
+	}
+	.hentry {
+		margin-bottom:0;
+		padding-bottom:.5em;
+		clear:both;
+	}
+	
+	/* Make sure we have room for our comment avatars */
+	.commentlist {
+		width: 100%;
+	}
+	.commentlist > li.comment,
+	.commentlist .pingback {
+		margin-left: 102px;
+		width: auto;
+	}
+	/* And a full-width comment form */
+	#respond {
+		width: auto;
+	}
+}
+
+@media (max-width: 767px) {
+  body {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .navbar-fixed-top,
+  .navbar-fixed-bottom {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  #wrapper > .container {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  
+}
+
+@media (max-width: 650px) {
+	input, textarea {
+		font-size: 13px;
+	}	
+	
+	/* Floated content doesn't work well at this size */
+	.alignleft,
+	.alignright {
+		float: none;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	
+	/* Talking avatars take up too much room at this size */
+	.commentlist > li.comment,
+	.commentlist > li.pingback {
+		margin-left: 0 !important;
+	}
+	.commentlist .avatar {
+		background: transparent;
+		display: block;
+		padding: 0;
+		position: static;
+	}
+	.commentlist .children .avatar {
+		background: none;
+		left: 2.2em;
+		padding: 0;
+		position: absolute;
+		top: 2.2em;
+	}
+	/* Use the available space in the smaller comment form */
+	#respond input[type="text"] {
+		width: 95%;
+	}
+	#respond .comment-form-author .required,
+	#respond .comment-form-email .required {
+		left: 95%;
+	}
+	
+	.hentry {
+		margin-bottom:2.5em;
+	}
+	.home .hentry {
+		margin-bottom:0;
+	}
+	
+	img[class*="span"] {
+		width:auto;
+	}
+}
+
+.twitter {
+	width:38px;
+	background-image: url("assets/img/twitter_38x38.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	text-align: center;
+}
+
+.linkedin {
+	width:38px;
+	background-image: url("assets/img/linkedin_38x38.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	text-align: center;
+}
+
+.facebook {
+	width:38px;
+	background-image: url("assets/img/facebook_38x38.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	text-align: center;
+}

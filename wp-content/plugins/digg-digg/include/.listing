@@ -1,0 +1,9 @@
+drwxr-xr-x    3 provingg   provingg         4096 Aug 22 09:47 .
+drwxr-xr-x    6 provingg   provingg         4096 Aug 22 09:47 ..
+-rw-r--r--    1 provingg   provingg        93435 Aug 22 09:47 dd-class.php
+-rw-r--r--    1 provingg   provingg        13590 Aug 22 09:47 dd-global-variable.php
+-rw-r--r--    1 provingg   provingg        12087 Aug 22 09:47 dd-helper.php
+-rw-r--r--    1 provingg   provingg        12856 Aug 22 09:47 dd-manual.php
+-rw-r--r--    1 provingg   provingg          297 Aug 22 09:47 dd-printform.php
+-rw-r--r--    1 provingg   provingg         2759 Aug 22 09:47 dd-upgrade.php
+drwxr-xr-x    2 provingg   provingg         4096 Aug 22 09:47 template
