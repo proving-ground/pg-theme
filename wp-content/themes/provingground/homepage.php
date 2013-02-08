@@ -14,64 +14,50 @@ get_header(); ?>
         <div class="span6 whatwedo"><a name="whatwedo"></a>
           <h2>What We Do</h2>
           <p>
-            As business becomes mobile, Proving Ground provides forward thinking executives the ability to close the gaps on envisioning, rationalizing, and executing their mobile businesses.
+            Proving Ground creates digital customer experiences that drive sales, differentiate brands, foster loyalty, and launch entirely new lines of business.
           </p>
 
           <ul class="nav nav-tabs nav-stacked accordion">
             <li>
-              <a href="#">Mobile strategy</a>
+              <a href="#">DIGITAL EXPERIENCE STRATEGY</a>
               <p>
-                For most companies, mobile is a strategic priority because of its ability to provide a significant competitive advantage. 
-                Proving Ground uses its proven strategy framework to help executive teams understand their opportunities, define mobile objectives, and ideate specific short and long-term initiatives for their achievement.
+                If it’s important, it deserves a strategy. How will your company define, rationalize and implement digital customer experiences to support your business goals? Most companies struggle for an answer. Proving Ground can help. We’ll assess where you stand and what impact your current digital experiences are having on your business. Then we’ll create a roadmap to where you ought to be that prioritizes and supports each project with a business case.
               </p>
             </li>
             <li>
-              <a href="#">Mobile maturity assessment</a>
+              <a href="#">MULTI-SCREEN EXPERIENCE DESIGN</a>
               <p>
-                Fully leveraging mobile for strategic, competitive advantage requires a series of technological and organizational transformations. Each company’s potential is different. 
-                Proving Ground’s mobile maturity framework lets executives fully understand their mobile readiness and realistically assess their mobile potential.
+                Customers routinely jump from smartphones to computers to tablets &mdash; often in the course of completing a single task. How do you design a seamless experience for this seemingly eratic behavior? Proving Ground analyzes behavior from the customer’s point-of-view and builds a consistent experiences with just the right bridges across devices so customers never get lost in the cracks.
               </p>
             </li>
             <li>
-              <a href="#">Technology roadmap planning</a>
+              <a href="#">DIGITAL PRODUCT DEVELOPMENT</a>
               <p>
-                A technology roadmap is a critical business tool that mitigates risk and enables executives to make strategic bets on long-term technology investments. 
-                The Proving Ground technology roadmap provides the business justification and the technology path through the existing, emerging and yet unknown landscape towards enabling the company’s mobile vision.
+                Multi-screen changes everything. Proving Ground works with established products companies to redefine and extend their products for a multi-screen world. We’ve even helped a few start-ups get their first product to market. Our approach ensures a product that is flexible and scalable while minimizing the risk, cost and time in getting to market.
               </p>
             </li>
             <li>
-              <a href="#">Mobile web-enablement</a>
+              <a href="#">HTML5 &amp; RICH INTERNET APPLICATIONS</a>
               <p>
-                Mobile prospects are searching for you, and mobile customers want to interact with you. 
-                Our tightly bounded, mobile web-enablement engagement lets us identify, develop and deploy key functionality that makes a significant business impact in a tight time frame.
+                HTML5 promises highly functional, rich user experiences that are universally available from multiple screens. But it’s not without its challenges. Slow loading, choppy mobile experiences are common, but not because of an inherent platform problem; it’s almost always a question of architectures and application design. Our extensive experience in HTML5 and rich internet application development ensures your project will deliver as promised.
               </p>
             </li>
             <li>
-              <a href="#">Mobile application development</a>
+              <a href="#">MOBILE WEB-ENABLEMENT</a>
               <p>
-                Whether it runs on an Apple iOS device, Android, or Blackberry, almost every mobile app has to connect to enterprise systems. 
-                In addition to delivering an app that users ￼￼embrace, Proving Ground ensures your apps connect securely and efficiently with back-end systems.
+                Mobile prospects are searching for you, and mobile customers want to interact with you. Yet a surprising number of companies don’t have a mobile-ready web site. Proving Ground knows a total redevelopment can be as undesireable as it is impractical. Our tightly bounded, mobile web-enablement engagement lets us identify, develop and deploy key functionality that makes a significant business impact in a tight time frame.
               </p>
             </li>
             <li>
-              <a href="#">Embedded software development</a>
+              <a href="#">TECHNOLOGY ROADMAP PLANNING</a>
               <p>
-                The number of machine-to-machine (M2M) and wireless embedded devices is growing exponentially - and so is the number of ways they can be deployed to improve products and operations. 
-                Proving Ground helps companies envision their M2M future and then designs and develops innovative M2M solutions that deliver business value.
+                A technology roadmap is a critical business tool that mitigates risk and enables executives to make strategic bets on long-term technology investments. The Proving Ground technology roadmap provides the business justification and the technology path through the existing, emerging and yet unknown landscape towards enabling the company’s mobile vision.
               </p>
             </li>
             <li>
-              <a href="#">Mobile business model design</a>
+              <a href="#">Native iOS, Android and Windows 8 Development</a>
               <p>
-                Mobile innovation allows businesses to create, deliver and capture value in entirely new ways. 
-                Proving Ground helps companies generate, rationalize and test new business models that maximize the value of mobile and fit the company’s core business strategy.
-              </p>
-            </li>
-            <li>
-              <a href="#">Human-centered design</a>
-              <p>
-                Human-centered design has been used for decades to create new solutions. 
-                Proving Ground uses HCD to understand, first-hand, the challenges users face and develop innovative solutions that are both technically feasible and commercially viable.
+                While some claim to be device-agnostics, we are staunch device-advocates &mdash; for each of the big 3 operating systems. Android, iOS and Windows 8 all have significant differences which should be embraced. Because when a native app is the right solution, those differences create the opportunity for exceptional digital experiences.
               </p>
             </li>
           </ul>
@@ -81,8 +67,7 @@ get_header(); ?>
         <div class="span5 offset1"><a name="whatwethink"></a>
           <h2>What We Think</h2>
           <p>
-            Before long, the primary way companies deliver value will be through mobile and connected devices. 
-            What they need most is the conceptual framework and technical understanding to evolve into a mobile business.<br />&nbsp;
+            The world of digital experience is evolving every day &mdash; and resetting customer expectations. We spend a lot of time watching what others are doing. Not to copy them, but to constantly evolve the way we think about our client’s digital experiences.
           </p>
 
 			<?php
@@ -145,7 +130,7 @@ get_header(); ?>
             <li>
               <a href="#">Clearleap</a>
               <p>
-                Rapidly growing media management and distribution company Clearleap exists to help regional cable companies deliver the same content and services as media giants ￼Comcast, Time Warner, and Cox — a mission easier said than done when dealing with the limits of infrastructure far from major cities.
+                Rapidly growing media management and distribution company Clearleap exists to help regional cable companies deliver the same content and services as media giants ￼Comcast, Time Warner, and Cox &mdash; a mission easier said than done when dealing with the limits of infrastructure far from major cities.
               </p>
               <p>
                 Proving Ground helps Clearleap fulfill its promise by leveraging technology that's already in consumers' homes. 
@@ -189,7 +174,7 @@ get_header(); ?>
             <li>
               <a href="#">Home Anatomy</a>
               <p>
-                A portion of America’s $80 billion annual furniture sales used to pass through the hands and bank accounts of interior designers — providing as much as 30% of the average designer’s annual income. 
+                A portion of America’s $80 billion annual furniture sales used to pass through the hands and bank accounts of interior designers &mdash; providing as much as 30% of the average designer’s annual income.
                 But the price transparency of the internet has virtually killed this income stream and decimated the design industry in the process. 
                 Home Anatomy was created to restore them both.
               </p>
@@ -210,7 +195,7 @@ get_header(); ?>
         <div class="span5 offset1"><a name="whoweare"></a>
           <h2>Who We Are</h2>
           <p>
-            Getting mobile innovation right requires an experienced team pushing the limits of what’s possible, what’s practical, and what’s valuable.
+            To better understand who we are, it’s good to start with who we are not.
           </p>
           <a class="extern" href="<?php echo get_permalink(12); ?>">Meet The Team &raquo;</a>
         </div>
