@@ -112,7 +112,7 @@ img[class="span3"] {
     content: url("assets/img/blackbox.png");
 }
 .home .span5 .span1, .home .span5 .span4 {
-	margin-left:0;
+	margin-left:5px;
 }
 .home .entry-title {
 	font-size:130%;
