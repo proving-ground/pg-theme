@@ -1,4 +1,0 @@
-[22-Aug-2012 15:15:02] PHP Warning:  fopen(/home/provingg/public_html/wp-content/plugins/editorial-calendar/lib/timePicker.css) [<a href='function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory in /home/provingg/public_html/wp-content/plugins/editorial-calendar/edcal.php on line 135
-[22-Aug-2012 15:15:02] PHP Warning:  filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for /home/provingg/public_html/wp-content/plugins/editorial-calendar/lib/timePicker.css in /home/provingg/public_html/wp-content/plugins/editorial-calendar/edcal.php on line 136
-[22-Aug-2012 15:15:02] PHP Warning:  fread(): supplied argument is not a valid stream resource in /home/provingg/public_html/wp-content/plugins/editorial-calendar/edcal.php on line 136
-[22-Aug-2012 15:15:02] PHP Warning:  fclose(): supplied argument is not a valid stream resource in /home/provingg/public_html/wp-content/plugins/editorial-calendar/edcal.php on line 137
