@@ -250,7 +250,7 @@ speed :				time each slide is shown [integer, milliseconds, defaults to 3000]
 				$wrap.append('<p class="jshowoff-slidelinks '+uniqueClass+'-slidelinks"></p>');
 				$.each(gallery, function(i, val) {
 					var linktext = $(this).attr('title') || i+1;
-					$('<a class="jshowoff-slidelink-'+i+' '+uniqueClass+'-slidelink-'+i+'" href="#null">'+linktext+'</a>').bind('click', {index:i}, function(e){ goToAndPause(e.data.index); return false; }).appendTo('.'+uniqueClass+'-slidelinks');
+					$('<a class="jshowoff-slidelink jshowoff-slidelink-'+i+' '+uniqueClass+'-slidelink-'+i+'" href="#null">'+linktext+'</a>').bind('click', {index:i}, function(e){ goToAndPause(e.data.index); return false; }).appendTo('.'+uniqueClass+'-slidelinks');
 				});
 			};		
 	

@@ -21,6 +21,14 @@ require_once('library/shortcodes.php');
 // Admin Functions (commented out by default)
 // require_once('library/admin.php');         // custom admin functions
 
+//Less Precompiler
+add_action('init', 'theme_enqueue_custom_styles');
+function theme_enqueue_custom_styles() {
+  wp_enqueue_style('less-jshowoff', get_stylesheet_directory_uri() . '/logos.css');
+  wp_enqueue_style('less-jshowoff', get_stylesheet_directory_uri() . '/library/less/jshowoff.less');
+}
+
+
 // Custom Backend Footer
 add_filter('admin_footer_text', 'bones_custom_admin_footer');
 function bones_custom_admin_footer() {
