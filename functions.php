@@ -24,8 +24,9 @@ require_once('library/shortcodes.php');
 //Less Precompiler
 add_action('init', 'theme_enqueue_custom_styles');
 function theme_enqueue_custom_styles() {
-  wp_enqueue_style('less-jshowoff', get_stylesheet_directory_uri() . '/logos.css');
+  wp_enqueue_style('css-logos', get_stylesheet_directory_uri() . '/logos.css');
   wp_enqueue_style('less-jshowoff', get_stylesheet_directory_uri() . '/library/less/jshowoff.less');
+  wp_enqueue_style('less-theme', get_stylesheet_directory_uri() . '/library/less/pg-theme.less');
 }
 
 
