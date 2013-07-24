@@ -5,34 +5,8 @@ Author:		Jason White
 Version:	0.2
 Desc:     css rules to customize pgCarousel logos
 
-
-
 */
 
-#slide-container {
-  height: 1024px;
-  width: 1296px;
-  position: relative;
-  background-repeat: no-repeat;
-}
-/* css for slide desc */
-#slide-container .slide .desc {
-  background: #ccc;
-  color: #ffffff;
-  float: right;
-  margin: 160px 100px 0 0;
-  height: 404px;
-  width: 400px;
-}
-/* slide img positioning */
-#slide-container .slide img{
-  position: absolute;
-  height: 404px;
-  width: 515px;
-  position: absolute;
-  top: 160px;
-  left: 260px;
-}
 
 /*  Thumbnails */
 .thumbFeatures .jshowoff-slidelink-0 {
