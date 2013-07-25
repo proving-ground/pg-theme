@@ -39,8 +39,8 @@
 	
 	<body <?php body_class(); ?>>
        <div class="container-fluid">
-          <div id="body-container">
-
+          <div id="bg-image-container"></div>
+          <div id="body-overlay">
 
 
 
