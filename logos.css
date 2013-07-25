@@ -10,19 +10,19 @@ Desc:     css rules to customize pgCarousel logos
 
 /*  Thumbnails */
 .thumbFeatures .jshowoff-slidelink-0 {
-  background-image: url(/wp-content/uploads/clear_l1.png);
+  background-image: url(/wordpress/wp-content/uploads/clear_l1.png);
 }
 .thumbFeatures .jshowoff-slidelink-1 {
-  background-image: url(/wp-content/uploads/coke_l2.png);
+  background-image: url(/wordpress/wp-content/uploads/coke_l2.png);
 }
 .thumbFeatures .jshowoff-slidelink-2 {
-  background-image: url(/wp-content/uploads/evirx_l3.png);
+  background-image: url(/wordpress/wp-content/uploads/evirx_l3.png);
 }
 .thumbFeatures .jshowoff-slidelink-3 {
-  background-image: url(/wp-content/uploads/playon_l4.png);
+  background-image: url(/wordpress/wp-content/uploads/playon_l4.png);
 }
 .thumbFeatures .jshowoff-slidelink-4 {
-  background-image: url(/wp-content/uploads/vavay_l5.png);
+  background-image: url(/wordpress/wp-content/uploads/vavay_l5.png);
 }
 .jshowoff.thumbFeatures .jshowoff-slidelinks {
   /* (slidelink width + left_and_right_padding) * slide_count;  (162+2padding+5margin) * 4 = */
