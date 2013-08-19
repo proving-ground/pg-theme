@@ -51,7 +51,7 @@ nav {
 }
 
 #slide-container {
-  height: 1024px;
+  height: 902px;
   width: 1296px;
   position: relative;
   background-repeat: no-repeat;
@@ -86,17 +86,33 @@ body {
 }
 
 .thumbFeatures {
-  p.jshowoff-controls {
+  .jshowoff-slidelinks-bg {
+    bottom: 0 !important;
+    position: absolute !important;
+    width: 100% !important;
+    height: 76px;
+    background-color: #000000;
+    -webkit-opacity: 0.5;
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+  }
+  .jshowoff-slidelinks {
+    bottom: 0 !important;
+    position: absolute !important;
+    width: 100% !important;
+  }
+
+  div.jshowoff-controls {
     top: 22% !important;
+    position: absolute !important;
+    width: 100% !important;
 
-    .jshowoff-next {
-      background: url('../../images/carousel-nav-arrow-right.png') no-repeat;
-      height: 32px;
-      width: 32px;
+    #carousel-nav-left {
+      width: 50px;
+      height: 50px;
+      padding-left: 10px;
 
-      &:before{
-        content: "";
-        display: block;
+      .background {
         background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48cmFkaWFsR3JhZGllbnQgaWQ9ImdyYWQtdWNnZy1nZW5lcmF0ZWQiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiBjeD0iNTAlIiBjeT0iNTAlIiByPSI3NSUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMzMzMzMzMiIHN0b3Atb3BhY2l0eT0iMSIvPjxzdG9wIG9mZnNldD0iMjclIiBzdG9wLWNvbG9yPSIjOTk5OTk5IiBzdG9wLW9wYWNpdHk9IjEiLz48c3RvcCBvZmZzZXQ9IjQ5JSIgc3RvcC1jb2xvcj0iI2RkZGRkZCIgc3RvcC1vcGFjaXR5PSIxIi8+PHN0b3Agb2Zmc2V0PSI2NyUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPjwvcmFkaWFsR3JhZGllbnQ+PHJlY3QgeD0iLTUwIiB5PSItNTAiIHdpZHRoPSIxMDEiIGhlaWdodD0iMTAxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPjwvc3ZnPg==);
         background-image: -moz-radial-gradient(center, ellipse, #333333 0%,#999999 27%,#dddddd 49%,#ffffff 67%);
         background-image: -webkit-radial-gradient(center, ellipse, #333333 0%,#999999 27%,#dddddd 49%,#ffffff 67%);
@@ -110,22 +126,27 @@ body {
         -moz-border-radius: 999px;
         -moz-background-clip: padding;
         border-radius: 999px;
-        background-clip: padding-box;
         width: 50px;
         height: 50px;
         position: absolute;
-        top: -9px;
-        left: -9px;
+      }
+      .arrow {
+        background: url("../../images/carousel-nav-arrow-left.png");
+        width: 30px;
+        height: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        top: 10px;
       }
     }
-    .jshowoff-prev {
-      background: url('../../images/carousel-nav-arrow-left.png') no-repeat;
-      height: 32px;
-      width: 32px;
 
-      &:before{
-        content: "";
-        display: block;
+    #carousel-nav-right {
+      width: 50px;
+      height: 50px;
+      padding-right: 10px;
+
+      .background {
         background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48cmFkaWFsR3JhZGllbnQgaWQ9ImdyYWQtdWNnZy1nZW5lcmF0ZWQiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiBjeD0iNTAlIiBjeT0iNTAlIiByPSI3NSUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMzMzMzMzMiIHN0b3Atb3BhY2l0eT0iMSIvPjxzdG9wIG9mZnNldD0iMjclIiBzdG9wLWNvbG9yPSIjOTk5OTk5IiBzdG9wLW9wYWNpdHk9IjEiLz48c3RvcCBvZmZzZXQ9IjQ5JSIgc3RvcC1jb2xvcj0iI2RkZGRkZCIgc3RvcC1vcGFjaXR5PSIxIi8+PHN0b3Agb2Zmc2V0PSI2NyUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPjwvcmFkaWFsR3JhZGllbnQ+PHJlY3QgeD0iLTUwIiB5PSItNTAiIHdpZHRoPSIxMDEiIGhlaWdodD0iMTAxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPjwvc3ZnPg==);
         background-image: -moz-radial-gradient(center, ellipse, #333333 0%,#999999 27%,#dddddd 49%,#ffffff 67%);
         background-image: -webkit-radial-gradient(center, ellipse, #333333 0%,#999999 27%,#dddddd 49%,#ffffff 67%);
@@ -139,12 +160,18 @@ body {
         -moz-border-radius: 999px;
         -moz-background-clip: padding;
         border-radius: 999px;
-        background-clip: padding-box;
         width: 50px;
         height: 50px;
         position: absolute;
-        top: -9px;
-        left: -9px;
+      }
+      .arrow {
+        background: url("../../images/carousel-nav-arrow-right.png");
+        width: 30px;
+        height: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        top: 10px;
       }
     }
   }

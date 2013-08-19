@@ -33,10 +33,10 @@ speed :				time each slide is shown [integer, milliseconds, defaults to 3000]
 			changeSpeed : 600,
 			controls : true,
 			controlText : {
-				play :		'Play',
-				pause :		'Pause',
-				next :		'Next',
-				previous :	'Previous'
+				play :		'',
+				pause :		'',
+				next :		'',
+				previous :	''
 			},
 			effect : 'fade',
 			hoverPause : true,
@@ -236,8 +236,23 @@ speed :				time each slide is shown [integer, milliseconds, defaults to 3000]
 				
 			// generate and add play/pause, prev, next controls
 			function addControls() {
-				$wrap.append('<p class="jshowoff-controls '+uniqueClass+'-controls"><a class="jshowoff-play '+uniqueClass+'-play" href="#null">'+config.controlText.pause+'</a> <a class="jshowoff-prev '+uniqueClass+'-prev" href="#null">'+config.controlText.previous+'</a> <a class="jshowoff-next '+uniqueClass+'-next" href="#null">'+config.controlText.next+'</a></p>');
-				$('.'+uniqueClass+'-controls a').each(function(){
+				//$wrap.append('<p class="jshowoff-controls '+uniqueClass+'-controls"><a class="jshowoff-prev '+uniqueClass+'-prev" href="#null">'+config.controlText.previous+'</a> <a class="jshowoff-next '+uniqueClass+'-next" href="#null">'+config.controlText.next+'</a></p>');
+                $wrap.append('<div class="jshowoff-controls '+uniqueClass+'-controls">' +
+                                '<a class="jshowoff-next pull-right '+uniqueClass+'-next" href="#null">' +
+                                    '<div id="carousel-nav-right">' +
+                                        '<div class="background"></div>' +
+                                        '<div class="arrow"></div>' +
+                                    '</div>' +
+                                '</a>' +
+                                '<a class="jshowoff-prev '+uniqueClass+'-prev" href="#null">' +
+                                    '<div id="carousel-nav-left">' +
+                                        '<div class="background"></div>' +
+                                        '<div class="arrow"></div>' +
+                                    '</div>' +
+                                '</a>' +
+                             '</div>');
+
+                $('.'+uniqueClass+'-controls a').each(function(){
 						if($(this).hasClass('jshowoff-play')) $(this).click(function(){ isPlaying() ? pause('playBtn') : play(); return false; } );
 						if($(this).hasClass('jshowoff-prev')) $(this).click(function(){ previous(); return false; });
 						if($(this).hasClass('jshowoff-next')) $(this).click(function(){ next(); return false; });
@@ -247,9 +262,11 @@ speed :				time each slide is shown [integer, milliseconds, defaults to 3000]
 
 			// generate and add slide links
 			function addSlideLinks() {
-				$wrap.append('<p class="jshowoff-slidelinks '+uniqueClass+'-slidelinks"></p>');
-				$.each(gallery, function(i, val) {
-					var linktext = $(this).attr('title') || i+1;
+				$wrap.append('<div class="jshowoff-slidelinks-bg"></div>');
+                $wrap.append('<div class="jshowoff-slidelinks '+uniqueClass+'-slidelinks"></div>');
+                $.each(gallery, function(i, val) {
+					//var linktext = $(this).attr('title') || i+1;
+                    var linktext = '';
 					$('<a class="jshowoff-slidelink jshowoff-slidelink-'+i+' '+uniqueClass+'-slidelink-'+i+'" href="#null">'+linktext+'</a>').bind('click', {index:i}, function(e){ goToAndPause(e.data.index); return false; }).appendTo('.'+uniqueClass+'-slidelinks');
 				});
 			};		

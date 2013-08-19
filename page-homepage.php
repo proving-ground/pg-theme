@@ -91,7 +91,7 @@ Template Name: Homepage
 
 						<section class="row-fluid post_content">
 
-							<div class="span8">
+							<div class="span12">
 
 								<?php the_content(); ?>
 
