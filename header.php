@@ -38,6 +38,30 @@
 	</head>
 	
 	<body <?php body_class(); ?>>
+
+
+       <!-- Modal Container [load content to the .modal-body div]  -->
+       <div class="modal hide fade center" id="myModal" tabindex="-1" role="dialog">
+           <div class="modal-header">
+               <!---<button class="close" type="button" data-dismiss="modal">×</button> --->
+               <div class="header-close">
+                 <a href="javascript:void(0);" data-dismiss="modal">close case study</a>
+               </div>
+           </div>
+           <div class="modal-body">
+
+
+
+           </div>
+           <div class="modal-footer">
+                <div class="footer-close">
+                  <a href="javascript:void(0);" data-dismiss="modal">close case study</a>
+                </div>
+           </div>
+       </div>
+
+
+
        <div class="container-fluid">
           <div id="bg-image-container"></div>
           <div id="body-overlay">

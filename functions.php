@@ -27,6 +27,7 @@ function theme_enqueue_custom_styles() {
   wp_enqueue_style('css-logos', get_stylesheet_directory_uri() . '/logos.css');
   wp_enqueue_style('less-jshowoff', get_stylesheet_directory_uri() . '/library/less/jshowoff.less');
   wp_enqueue_style('less-theme', get_stylesheet_directory_uri() . '/library/less/pg-theme.less');
+  wp_enqueue_style('less-modal', get_stylesheet_directory_uri() . '/library/less/modals.less');
 }
 
 
