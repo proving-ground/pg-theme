@@ -30,8 +30,9 @@ Desc:     css rules to customize pgCarousel logos
   width: 676px;
 }
 .jshowoff.thumbFeatures .jshowoff-slidelinks a {
-  width: 162px;
+  width: 200px;
   height: 74px;
   display: inline-block;
   background-repeat: no-repeat;
+  margin: 0;
 }

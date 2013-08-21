@@ -29,6 +29,7 @@ function addTwitterBSClass(thisObj) {
   return true;
 }
 
+
 // as the page loads, call these scripts
 jQuery(document).ready(function($) {
 
@@ -99,5 +100,22 @@ jQuery(document).ready(function($) {
 	$('.alert-message').alert();
 	
 	$('.dropdown-toggle').dropdown();
+
+    $('.case-study-button').on('click', function() {
+
+        $("#modal-body-container").html("");
+
+        $.ajax({
+            url: "?page_id="+ $(this).attr('get-page-id'),
+            type: "GET",
+            error: function(jqXHR, textStatus, errorThrown){
+                if('console' in self && 'log' in console) { console.log("AJAX error: " + textStatus + " - " + errorThrown) };
+            },
+            success: function(data, textStatus, jqXHR){
+                $("#modal-body-container").html(data);
+            }
+        });
+
+    });
  
 }); /* end of as page load scripts */

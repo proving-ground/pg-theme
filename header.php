@@ -45,17 +45,17 @@
            <div class="modal-header">
                <!---<button class="close" type="button" data-dismiss="modal">×</button> --->
                <div class="header-close">
-                 <a href="javascript:void(0);" data-dismiss="modal">close case study</a>
+                 <a href="javascript:void(0);" data-dismiss="modal">Close Window</a>
                </div>
            </div>
-           <div class="modal-body">
+           <div id="modal-body-container" class="modal-body">
 
 
 
            </div>
            <div class="modal-footer">
                 <div class="footer-close">
-                  <a href="javascript:void(0);" data-dismiss="modal">close case study</a>
+                  <a href="javascript:void(0);" data-dismiss="modal">Close Window</a>
                 </div>
            </div>
        </div>
@@ -73,14 +73,19 @@
                 <div id="inner-header" class="clearfix">
 
                   <div class="navbar navbar-fixed-top">
+
                     <div class="navbar-inner">
+                      <div class="navbar-bg"></div>
                       <div class="container-fluid nav-container">
                         <nav role="navigation">
                           <a class="brand" id="logo" title="<?php echo get_bloginfo('description'); ?>" href="<?php echo home_url(); ?>">
                             <?php if(of_get_option('branding_logo','')!='') { ?>
                               <img src="<?php echo of_get_option('branding_logo'); ?>" alt="<?php echo get_bloginfo('description'); ?>">
                               <?php }
-                              if(of_get_option('site_name','1')) bloginfo('name'); ?></a>
+                              if(of_get_option('site_name','1')) bloginfo('name'); ?>
+                              <span class="tagline"><?php echo get_bloginfo('description'); ?></span>
+                              </a>
+
 
                           <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                                 <span class="icon-bar"></span>
