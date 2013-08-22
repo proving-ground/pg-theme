@@ -96,19 +96,38 @@ input, textarea, select, .uneditable-input {
 	white-space: nowrap;
 }
 
+
+#footer-links-container {
+    font-size: 10px;
+    width: 400px;
+}
+
 .footer-links{
-	float: right;
 	margin-bottom: 18px;
+    float: right;
+
+}
+footer-links.clearfix{
+    display: inline !important;
 }
 
 .footer-links .menu{
 	list-style-type: none;
 	margin-left: 0;
+
 }
 
 .footer-links .menu li{
 	float: left;
 	margin-left: 10px;
+    list-style: none;
+    font-size: 10px;
+}
+.footer-links .menu li:before{
+    content: "|"; padding: 0 1.5em;
+}
+.footer-links .menu li a{
+   color: #333333;
 }
 
 /* post styling */
@@ -669,7 +688,8 @@ blockquote.pull-left{
 	}
 	
 	#inner-footer{
-		padding: 0;
+		padding: 10px 30px;
+        background-color: #f1f1f1;
 	}
 	
 	#content{

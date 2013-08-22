@@ -41,7 +41,7 @@ speed :				time each slide is shown [integer, milliseconds, defaults to 3000]
 			effect : 'fade',
 			hoverPause : true,
 			links : true,
-			speed : 3000,
+			speed : 6000,
             beforeTransition : null,
             afterTransition : null
 		};
@@ -100,8 +100,8 @@ speed :				time each slide is shown [integer, milliseconds, defaults to 3000]
 			
 			// pause slide rotation on hover
 			if(config.hoverPause){ $cont.hover(
-				function(){ if(isPlaying()) pause('hover'); },
-				function(){ if(isPlaying()) play('hover'); }
+				function(){ if(isPlaying()) pause('hover'); }//,
+				//function(){ if(isPlaying()) play('hover'); }
 			);};
 			
 			// determine autoPlay
@@ -302,12 +302,12 @@ speed :				time each slide is shown [integer, milliseconds, defaults to 3000]
 		this.each(function(i) {	
 			$(this).css({left:'auto',right:'auto',top:'auto',bottom:'auto'});
 			var measurement = (config.direction == 'left') || (config.direction == 'right') ? $(this).outerWidth() : $(this).outerHeight();
-			var startStyle = {};
+            var startStyle = {};
 			startStyle['position'] = $(this).css('position') == 'static' ? 'relative' : $(this).css('position');
-			startStyle[config.direction] = (config.showHide == 'show') ? '-'+measurement+'px' : 0;
+            startStyle[config.direction] = (config.showHide == 'show') ? '-'+measurement+'px' : 0;
 			var endStyle = {};
 			endStyle[config.direction] = config.showHide == 'show' ? 0 : '-'+measurement+'px';
-			$(this).css(startStyle).animate(endStyle,config.changeSpeed,callback);
+            $(this).css(startStyle).animate(endStyle,config.changeSpeed,callback);
 		// end .each
 		});
 	

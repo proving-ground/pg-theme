@@ -30,6 +30,25 @@ function addTwitterBSClass(thisObj) {
 }
 
 
+function loadCaseStudy(e) {
+
+    $("#modal-body-container").html("");
+
+    $.ajax({
+        url: "?page_id="+ $(e).attr('get-page-id'),
+        type: "GET",
+        error: function(jqXHR, textStatus, errorThrown){
+            if('console' in self && 'log' in console) { console.log("AJAX error: " + textStatus + " - " + errorThrown) };
+        },
+        success: function(data, textStatus, jqXHR){
+            $("#modal-body-container").html(data);
+            }
+    });
+
+}
+
+
+
 // as the page loads, call these scripts
 jQuery(document).ready(function($) {
 
@@ -101,21 +120,6 @@ jQuery(document).ready(function($) {
 	
 	$('.dropdown-toggle').dropdown();
 
-    $('.case-study-button').on('click', function() {
 
-        $("#modal-body-container").html("");
-
-        $.ajax({
-            url: "?page_id="+ $(this).attr('get-page-id'),
-            type: "GET",
-            error: function(jqXHR, textStatus, errorThrown){
-                if('console' in self && 'log' in console) { console.log("AJAX error: " + textStatus + " - " + errorThrown) };
-            },
-            success: function(data, textStatus, jqXHR){
-                $("#modal-body-container").html(data);
-            }
-        });
-
-    });
  
 }); /* end of as page load scripts */

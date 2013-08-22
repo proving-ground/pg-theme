@@ -5,9 +5,9 @@ Template Name: Homepage
 ?>
 
 <?php get_header(); ?>
-			
+
 			<div id="content" class="clearfix row-fluid">
-			
+
 				<div id="main" class="span12 clearfix" role="main">
 
 					<?php
@@ -72,40 +72,15 @@ Template Name: Homepage
 
 					<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
 
-						<header>
-
-							<?php
-								$post_thumbnail_id = get_post_thumbnail_id();
-								$featured_src = wp_get_attachment_image_src( $post_thumbnail_id, 'wpbs-featured-home' );
-							?>
-
-							<div class="hero-unit" style="background-image: url('<?php echo $featured_src[0]; ?>'); background-repeat: no-repeat; background-position: 0 0;">
-
-								<h1><?php the_title(); ?></h1>
-
-								<?php echo get_post_meta($post->ID, 'custom_tagline' , true);?>
-
-							</div>
-
-						</header>
-
 						<section class="row-fluid post_content">
 
 							<div class="span12">
 
-								<?php the_content(); ?>
+						      <?php the_content(); ?>
 
 							</div>
 
-							<?php get_sidebar('sidebar2'); // sidebar 2 ?>
-
 						</section> <!-- end article header -->
-
-						<footer>
-
-							<p class="clearfix"><?php the_tags('<span class="tags">' . __("Tags","bonestheme") . ': ', ', ', '</span>'); ?></p>
-
-						</footer> <!-- end article footer -->
 
 					</article> <!-- end article -->
 
@@ -130,11 +105,11 @@ Template Name: Homepage
 					</article>
 
 					<?php endif; ?>
-			
+
 				</div> <!-- end #main -->
-    
+
 				<?php //get_sidebar(); // sidebar 1 ?>
-    
+
 			</div> <!-- end #content -->
 
 

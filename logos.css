@@ -10,20 +10,41 @@ Desc:     css rules to customize pgCarousel logos
 
 /*  Thumbnails */
 .thumbFeatures .jshowoff-slidelink-0 {
-  background-image: url(/wordpress/wp-content/uploads/clear_l1.png);
+  background-image: url(/wordpress/wp-content/uploads/logo-case-off-slide1.png);
 }
+.thumbFeatures .jshowoff-slidelink-0.jshowoff-active {
+    background-image: url(/wordpress/wp-content/uploads/logo-case-on-slide1.png);
+}
+
 .thumbFeatures .jshowoff-slidelink-1 {
-  background-image: url(/wordpress/wp-content/uploads/coke_l2.png);
+  background-image: url(/wordpress/wp-content/uploads/logo-case-off-slide2.png);
 }
+.thumbFeatures .jshowoff-slidelink-1.jshowoff-active {
+    background-image: url(/wordpress/wp-content/uploads/logo-case-on-slide2.png);
+}
+
 .thumbFeatures .jshowoff-slidelink-2 {
-  background-image: url(/wordpress/wp-content/uploads/evirx_l3.png);
+  background-image: url(/wordpress/wp-content/uploads/logo-case-off-slide3.png);
 }
+.thumbFeatures .jshowoff-slidelink-2.jshowoff-active {
+    background-image: url(/wordpress/wp-content/uploads/logo-case-on-slide3.png);
+}
+
 .thumbFeatures .jshowoff-slidelink-3 {
-  background-image: url(/wordpress/wp-content/uploads/playon_l4.png);
+  background-image: url(/wordpress/wp-content/uploads/logo-case-off-slide4.png);
 }
+.thumbFeatures .jshowoff-slidelink-3.jshowoff-active {
+    background-image: url(/wordpress/wp-content/uploads/logo-case-on-slide4.png);
+}
+
 .thumbFeatures .jshowoff-slidelink-4 {
-  background-image: url(/wordpress/wp-content/uploads/vavay_l5.png);
+  background-image: url(/wordpress/wp-content/uploads/logo-case-off-slide5.png);
 }
+.thumbFeatures .jshowoff-slidelink-4.jshowoff-active {
+    background-image: url(/wordpress/wp-content/uploads/logo-case-on-slide5.png);
+}
+
+
 .jshowoff.thumbFeatures .jshowoff-slidelinks {
   /* (slidelink width + left_and_right_padding) * slide_count;  (162+2padding+5margin) * 4 = */
   height: 76px;
@@ -31,7 +52,7 @@ Desc:     css rules to customize pgCarousel logos
 }
 .jshowoff.thumbFeatures .jshowoff-slidelinks a {
   width: 200px;
-  height: 74px;
+  height: 73px;
   display: inline-block;
   background-repeat: no-repeat;
   margin: 0;
