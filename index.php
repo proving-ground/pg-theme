@@ -1,62 +1,85 @@
-<?php get_header(); ?>
-			
-			<?php
-				$blog_hero = of_get_option('blog_hero');
-				if ($blog_hero){
-			?>
-			<div class="clearfix row-fluid">
-				<div class="hero-unit">
-				
-					<h1><?php bloginfo('title'); ?></h1>
-					
-					<p><?php bloginfo('description'); ?></p>
-				
-				</div>
-			</div>
-			<?php
-				}
-			?>
-			
-			<div id="content" class="clearfix row-fluid">
-			
-				<div id="main" class="span8 clearfix" role="main">
 
-					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-						<?php get_template_part( 'content', get_post_format() ); ?>					
-					<?php endwhile; ?>	
-					
-					<?php if (function_exists('page_navi')) { // if expirimental feature is active ?>
-						
-						<?php page_navi(); // use the page navi function ?>
-						
-					<?php } else { // if it is disabled, display regular wp prev & next links ?>
-						<nav class="wp-prev-next">
-							<ul class="clearfix">
-								<li class="prev-link"><?php next_posts_link(_e('&laquo; Older Entries', "bonestheme")) ?></li>
-								<li class="next-link"><?php previous_posts_link(_e('Newer Entries &raquo;', "bonestheme")) ?></li>
-							</ul>
-						</nav>
-					<?php } ?>		
-					
-					<?php else : ?>
-					
-					<article id="post-not-found">
-					    <header>
-					    	<h1><?php _e("Not Found", "bonestheme"); ?></h1>
-					    </header>
-					    <section class="post_content">
-					    	<p><?php _e("Sorry, but the requested resource was not found on this site.", "bonestheme"); ?></p>
-					    </section>
-					    <footer>
-					    </footer>
-					</article>
-					
-					<?php endif; ?>
-			
-				</div> <!-- end #main -->
-    
-				<?php get_sidebar(); // sidebar 1 ?>
-    
-			</div> <!-- end #content -->
+
+<?php get_header('backpage'); ?>
+
+
+			<div id="backpage-content" class="row-fluid">
+
+                <div id="main" class="span11 clearfix" role="main">
+
+                     <div id="blog-header">
+                       <div id="search-form" class="pull-right">
+                          <form action="<?php echo home_url( '/' ); ?>" method="get" class="form-stacked">
+                              <fieldset>
+                                <div class="clearfix">
+                                    <div class="input-append input-prepend">
+                                        <span class="add-on"><i class="icon-search"></i></span>
+                                        <input type="text" name="s" id="search" placeholder="<?php _e("Search","bonestheme"); ?>" value="<?php the_search_query(); ?>" />
+                                        <button type="submit" class="search-button"><?php _e("Search","bonestheme"); ?></button>
+                                    </div>
+                                  </div>
+                              </fieldset>
+                          </form>
+                       </div>
+                       <div class="blog-title">Blog</div>
+                     </div>
+
+                    <div id="grid-container">
+                        <?php
+                        $num_cols = 3; // set the number of columns here
+                        //the query section is only neccessary if the code is used in a page template//
+                        $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; // for pagination
+                        $args = array(
+                          'posts_per_page' => 16, // optional to overwrite the dashboard setting
+                          'cat' => 0, // add any other query parameter to this array
+                          'paged' => $paged
+                        );
+                        query_posts($args);
+                        //end of query section
+                        if (have_posts()) :
+                          for ( $i=1 ; $i <= $num_cols; $i++ ) :
+                            echo '<div id="col-'.$i.'" class="col">';
+                            $counter = $num_cols + 1 - $i;
+                            while (have_posts()) : the_post();
+                              if( $counter%$num_cols == 0 ) : ?>
+                                <div class="new-wrapper">
+                                    <div class="post-image">
+                                       <?php echo the_post_thumbnail('medium'); ?>
+                                    </div>
+                                    <a class="post-title" href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a>
+                                    <div class="post-sub-title">
+                                        <?php the_time('M d'); ?> | <?php the_tags() ?>
+                                    </div>
+                                    <div class="post-excerpt">
+                                        <?php the_excerpt(); ?>
+                                    </div>
+
+                                </div> <!-- closing div of new-wrapper -->
+                              <?php endif;
+                              $counter++;
+                            endwhile;
+                            rewind_posts();
+                            echo '</div>'; //closes the column div
+                          endfor;
+                          next_posts_link('&laquo; Older Entries');
+                          previous_posts_link('Newer Entries &raquo;');
+                        else:
+                          echo 'no posts';
+                        endif;
+                        wp_reset_query();
+                        ?>
+                    </div>
+
+
+
+
+
+
+
+
+                </div> <!-- end #main -->
+
+            </div> <!-- end #content -->
+
 
 <?php get_footer(); ?>

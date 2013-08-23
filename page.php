@@ -1,4 +1,8 @@
-<?php get_header(); ?>
+<?php get_header('backpage'); ?>
+
+	<div id="backpage-content" class="row-fluid">
+
+        <div id="main" class="span11 clearfix" role="main">
 			
 			<div id="content" class="clearfix row-fluid">
 			
@@ -51,5 +55,8 @@
 				<?php get_sidebar(); // sidebar 1 ?>
     
 			</div> <!-- end #content -->
+
+        </div>
+    </div>
 
 <?php get_footer(); ?>
