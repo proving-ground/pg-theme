@@ -139,7 +139,7 @@ The comments page for Bones
 	</div>
 	
 	<div class="form-actions">
-	  <input class="btn btn-primary" name="submit" type="submit" id="submit" tabindex="5" value="<?php _e("Submit Comment","bonestheme"); ?>" />
+	  <input class="gray-button" name="submit" type="submit" id="submit" tabindex="5" value="<?php _e("Submit Comment","bonestheme"); ?>" />
 	  <?php comment_id_fields(); ?>
 	</div>
 	

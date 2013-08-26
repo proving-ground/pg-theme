@@ -24,16 +24,18 @@
                        <div class="blog-title">Blog</div>
                      </div>
 
+
                     <div id="grid-container">
                         <?php
                         $num_cols = 3; // set the number of columns here
                         //the query section is only neccessary if the code is used in a page template//
                         $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; // for pagination
                         $args = array(
-                          'posts_per_page' => 16, // optional to overwrite the dashboard setting
+                          'posts_per_page' => 6, // optional to overwrite the dashboard setting
                           'cat' => 0, // add any other query parameter to this array
                           'paged' => $paged
                         );
+
                         query_posts($args);
                         //end of query section
                         if (have_posts()) :
@@ -59,27 +61,57 @@
                               $counter++;
                             endwhile;
                             rewind_posts();
+
                             echo '</div>'; //closes the column div
                           endfor;
-                          next_posts_link('&laquo; Older Entries');
-                          previous_posts_link('Newer Entries &raquo;');
+
+
                         else:
                           echo 'no posts';
                         endif;
                         wp_reset_query();
                         ?>
+
+
+                      <div id='pagination'>
+                        <a href="javascript:void(0);">More</a>
+                      </div>
+
                     </div>
-
-
-
-
-
-
-
 
                 </div> <!-- end #main -->
 
             </div> <!-- end #content -->
 
+            <script>
+            jQuery(function($) {
+                var pagecount = 1;
+
+                $('#pagination a').on('click', function(e){
+                    e.preventDefault();
+
+                    pagecount++;
+
+                    var link = document.URL + "&paged=" + pagecount;
+
+                    $('#content_holder').load(link + ' #grid-container', function (responseText, textStatus, XMLHttpRequest) {
+                         if (textStatus == "success") {
+                              for(i=1;i<=3; i++) {
+                                  item = $('#content_holder #grid-container #col-'+i).html();
+
+                                  $('#grid-container #col-'+i).append(item);
+                              }
+                         }
+                         if (textStatus == "error") {
+                             $('#pagination').html('');
+                         }
+                    });
+
+                    $('#content_holder').html('');
+                });
+            });
+
+            </script>
+            <div id="content_holder" style="display: none;"></div>
 
 <?php get_footer(); ?>
