@@ -5,7 +5,7 @@
 
 			<div id="backpage-content" class="row-fluid">
 
-                <div id="main" class="span11 clearfix" role="main">
+                <div id="main" class="span12 clearfix" role="main">
 
                      <div id="blog-header">
                        <div id="search-form" class="pull-right">
@@ -27,6 +27,10 @@
 
                     <div id="grid-container">
                         <?php
+                        //$numposts = wp_count_posts('post');
+                        //echo $numposts->publish;
+                        //$postcount = 0;
+
                         $num_cols = 3; // set the number of columns here
                         //the query section is only neccessary if the code is used in a page template//
                         $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; // for pagination

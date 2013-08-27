@@ -75,6 +75,10 @@ input, textarea, select, .uneditable-input {
 	margin-bottom: 0;
 }
 
+.input-prepend .add-on {
+    height: 30px;
+}
+
 .navbar-form, .navbar-search {
 	margin: 0 0 9px;
 }
