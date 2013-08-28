@@ -131,8 +131,7 @@ speed :				time each slide is shown [integer, milliseconds, defaults to 3000]
                     counter = index;
                 }
 
-
-				if(config.effect=='slideLeft'){
+                if(config.effect=='slideLeft'){
 					var newSlideDir, oldSlideDir;
 					function slideDir(dir) {
 						newSlideDir = dir=='right' ? 'left' : 'right';
@@ -140,15 +139,16 @@ speed :				time each slide is shown [integer, milliseconds, defaults to 3000]
 					};
 					
 
-					counter >= oldCounter ? slideDir('left') : slideDir('right') ;
+					counter >= oldCounter ? slideDir('left') : slideDir('left') ;
 
-                    //if (counter = )
-                    //slideDir('left');
+
 
 					$(gallery[counter]).clone().appendTo($cont).slideIt({direction:newSlideDir,changeSpeed:config.changeSpeed});
 					if($cont.children().length>1){
-						$cont.children().eq(0).css('position','absolute').slideIt({direction:oldSlideDir,showHide:'hide',changeSpeed:config.changeSpeed},function(){$(this).remove();});
-					};
+
+                        $cont.children().eq(0).css('position','absolute').slideIt({direction:oldSlideDir,showHide:'hide',changeSpeed:config.changeSpeed},function(){$(this).remove();});
+
+                    };
 				} else if (config.effect=='fade') {
 					$(gallery[counter]).clone().appendTo($cont).hide().fadeIn(config.changeSpeed,function(){if($.browser.msie)this.style.removeAttribute('filter');});
 					if($cont.children().length>1){
