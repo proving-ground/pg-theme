@@ -16,7 +16,7 @@ Template Name: Case Study Wrapper
 
 ?>
             <?php
-             $pageid = get_query_var('page_id');
+             $pageid = $post->ID;
             ?>
 
 
