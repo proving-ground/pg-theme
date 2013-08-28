@@ -3,10 +3,10 @@
 				<div id="inner-footer" class="clearfix">
 
 					<div class="pull-right">
-					  <img src="/wordpress/wp-content/uploads/icon-linkedin.png" width="24" border="0">
-					  <img src="/wordpress/wp-content/uploads/icon-facebook.png" width="24" border="0">
-					  <img src="/wordpress/wp-content/uploads/icon-google.png" width="24" border="0">
-					  <img src="/wordpress/wp-content/uploads/icon-twitter.png" width="24" border="0">
+					  <img src="/wp-content/uploads/icon-linkedin.png" width="24" border="0">
+					  <img src="/wp-content/uploads/icon-facebook.png" width="24" border="0">
+					  <img src="/wp-content/uploads/icon-google.png" width="24" border="0">
+					  <img src="/wp-content/uploads/icon-twitter.png" width="24" border="0">
 					</div>
 			
 					<div id="footer-links-container">
