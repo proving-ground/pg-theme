@@ -17,7 +17,7 @@ Desc:     css rules to customize pgCarousel logos
 }
 
 .thumbFeatures .jshowoff-slidelink-1 {
-  background-image: url(/uploads/logo-case-off-slide2.png);
+  background-image: url(/wp-content/uploads/logo-case-off-slide2.png);
 }
 .thumbFeatures .jshowoff-slidelink-1.jshowoff-active {
     background-image: url(/wp-content/uploads/logo-case-on-slide2.png);
