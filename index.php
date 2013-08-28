@@ -88,15 +88,16 @@
             </div> <!-- end #content -->
 
             <script>
-            jQuery(function($) {
+            jQuery(document).ready(function($) {
                 var pagecount = 1;
 
                 $('#pagination a').on('click', function(e){
-                    e.preventDefault();
 
                     pagecount++;
 
-                    var link = document.URL + "&paged=" + pagecount;
+                    var link = document.URL + "?paged=" + pagecount;
+
+                    alert(link);
 
                     $('#content_holder').load(link + ' #grid-container', function (responseText, textStatus, XMLHttpRequest) {
                          if (textStatus == "success") {

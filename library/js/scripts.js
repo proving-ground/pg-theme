@@ -49,6 +49,8 @@ function loadCaseStudy(e) {
 
 
 
+
+
 // as the page loads, call these scripts
 jQuery(document).ready(function($) {
 
@@ -116,9 +118,9 @@ jQuery(document).ready(function($) {
 		}
 	});
 			
-	$('.alert-message').alert();
+	//$('.alert-message').alert();
 	
-	$('.dropdown-toggle').dropdown();
+	//$('.dropdown-toggle').dropdown();
 
 
  
