@@ -97,7 +97,6 @@
 
                     var link = document.URL + "?paged=" + pagecount;
 
-                    alert(link);
 
                     $('#content_holder').load(link + ' #grid-container', function (responseText, textStatus, XMLHttpRequest) {
                          if (textStatus == "success") {
