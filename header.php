@@ -41,7 +41,7 @@
 
 
        <!-- Modal Container [load content to the .modal-body div]  -->
-       <div class="modal hide fade center" id="myModal" tabindex="-1" role="dialog">
+       <div class="modal fade center" id="myModal" tabindex="-1" role="dialog">
            <div class="modal-header">
                <!---<button class="close" type="button" data-dismiss="modal">×</button> --->
                <div class="header-close">
