@@ -10,38 +10,38 @@ Desc:     css rules to customize pgCarousel logos
 
 /*  Thumbnails */
 .thumbFeatures .jshowoff-slidelink-0 {
-  background-image: url(/wordpress/wp-content/uploads/logo-case-off-slide1.png);
+  background-image: url(/wp-content/uploads/logo-case-off-slide1.png);
 }
 .thumbFeatures .jshowoff-slidelink-0.jshowoff-active {
-    background-image: url(/wordpress/wp-content/uploads/logo-case-on-slide1.png);
+    background-image: url(/wp-content/uploads/logo-case-on-slide1.png);
 }
 
 .thumbFeatures .jshowoff-slidelink-1 {
-  background-image: url(/wordpress/wp-content/uploads/logo-case-off-slide2.png);
+  background-image: url(/uploads/logo-case-off-slide2.png);
 }
 .thumbFeatures .jshowoff-slidelink-1.jshowoff-active {
-    background-image: url(/wordpress/wp-content/uploads/logo-case-on-slide2.png);
+    background-image: url(/wp-content/uploads/logo-case-on-slide2.png);
 }
 
 .thumbFeatures .jshowoff-slidelink-2 {
-  background-image: url(/wordpress/wp-content/uploads/logo-case-off-slide3.png);
+  background-image: url(/wp-content/uploads/logo-case-off-slide3.png);
 }
 .thumbFeatures .jshowoff-slidelink-2.jshowoff-active {
-    background-image: url(/wordpress/wp-content/uploads/logo-case-on-slide3.png);
+    background-image: url(/wp-content/uploads/logo-case-on-slide3.png);
 }
 
 .thumbFeatures .jshowoff-slidelink-3 {
-  background-image: url(/wordpress/wp-content/uploads/logo-case-off-slide4.png);
+  background-image: url(/wp-content/uploads/logo-case-off-slide4.png);
 }
 .thumbFeatures .jshowoff-slidelink-3.jshowoff-active {
-    background-image: url(/wordpress/wp-content/uploads/logo-case-on-slide4.png);
+    background-image: url(/wp-content/uploads/logo-case-on-slide4.png);
 }
 
 .thumbFeatures .jshowoff-slidelink-4 {
-  background-image: url(/wordpress/wp-content/uploads/logo-case-off-slide5.png);
+  background-image: url(/wp-content/uploads/logo-case-off-slide5.png);
 }
 .thumbFeatures .jshowoff-slidelink-4.jshowoff-active {
-    background-image: url(/wordpress/wp-content/uploads/logo-case-on-slide5.png);
+    background-image: url(/wp-content/uploads/logo-case-on-slide5.png);
 }
 
 
