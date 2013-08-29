@@ -146,8 +146,8 @@ speed :				time each slide is shown [integer, milliseconds, defaults to 3000]
 					$(gallery[counter]).clone().appendTo($cont); //.slideIt({direction:newSlideDir,changeSpeed:config.changeSpeed});
 					if($cont.children().length>1){
 
-                        $cont.children().eq(1).slideIt({direction:newSlideDir,changeSpeed:config.changeSpeed});
-                        $cont.children().eq(0).slideIt({direction:oldSlideDir,showHide:'hide',changeSpeed:config.changeSpeed},function(){$(this).remove();});
+                        $cont.children().eq(0).slideIt({direction:oldSlideDir,showHide:'hide',changeSpeed:config.changeSpeed},0,function(){$(this).remove();});
+                        $cont.children().eq(1).slideIt({direction:newSlideDir,changeSpeed:config.changeSpeed},1);
 
                     };
 				} else if (config.effect=='fade') {
@@ -290,7 +290,7 @@ speed :				time each slide is shown [integer, milliseconds, defaults to 3000]
 
 (function($) {
 
-	$.fn.slideIt = function(settings,callback) {
+	$.fn.slideIt = function(settings,index,callback) {
 		// default global vars
 		var config = {
 			direction : 'left',
@@ -302,16 +302,30 @@ speed :				time each slide is shown [integer, milliseconds, defaults to 3000]
 		if (settings) $.extend(config, settings);
 		
 		this.each(function(i) {
+            if(index==0) {
+                $(this).css({left:'auto',right:'auto',top:'auto',bottom:'auto'});
+                var measurement = (config.direction == 'left') || (config.direction == 'right') ? $(this).outerWidth() : $(this).outerHeight();
+                var startStyle = {};
+                startStyle['position'] = $(this).css('position') == 'static' ? 'relative' : $(this).css('position');
+                startStyle[config.direction] = (config.showHide == 'show') ? '-'+measurement+'px' : 0;
+                var endStyle = {};
+                endStyle[config.direction] = config.showHide == 'show' ? 0 : '-'+measurement+'px';
+                $(this).css(startStyle).animate(endStyle,config.changeSpeed,callback);
+            }
+            if(index==1) {
+                $(this).css({left:'auto',right:'auto',top:'auto',bottom:'auto'});
+                var measurement = (config.direction == 'left') || (config.direction == 'right') ? $(this).outerWidth() : $(this).outerHeight();
+                var startStyle = {};
+                startStyle['position'] = $(this).css('position') == 'static' ? 'relative' : $(this).css('position');
+                startStyle[config.direction] = (config.showHide == 'show') ? '-'+measurement+'px' : 0;
+                var endStyle = {};
+                endStyle[config.direction] = config.showHide == 'show' ? 0 : '-'+measurement+'px';
 
-			$(this).css({left:'auto',right:'auto',top:'auto',bottom:'auto'});
-			var measurement = (config.direction == 'left') || (config.direction == 'right') ? $(this).outerWidth() : $(this).outerHeight();
-            var startStyle = {};
-			startStyle['position'] = $(this).css('position') == 'static' ? 'relative' : $(this).css('position');
-            startStyle[config.direction] = (config.showHide == 'show') ? '-'+measurement+'px' : 0;
-			var endStyle = {};
-			endStyle[config.direction] = config.showHide == 'show' ? 0 : '-'+measurement+'px';
-            $(this).css(startStyle).animate(endStyle,config.changeSpeed,callback);
+                var desc = $('#slide-container .desc:last');
+                desc.hide().delay(1500).fadeIn(1000);
 
+                $(this).css(startStyle).animate(endStyle,config.changeSpeed,callback);
+            }
 		// end .each
 		});
 	
