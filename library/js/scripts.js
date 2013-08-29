@@ -117,10 +117,6 @@ jQuery(document).ready(function($) {
 			$(this).animate({ width: '100px' });
 		}
 	});
-			
-	//$('.alert-message').alert();
-	
-	//$('.dropdown-toggle').dropdown();
 
 
  

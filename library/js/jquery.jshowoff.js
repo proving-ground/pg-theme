@@ -143,10 +143,11 @@ speed :				time each slide is shown [integer, milliseconds, defaults to 3000]
 
 
 
-					$(gallery[counter]).clone().appendTo($cont).slideIt({direction:newSlideDir,changeSpeed:config.changeSpeed});
+					$(gallery[counter]).clone().appendTo($cont); //.slideIt({direction:newSlideDir,changeSpeed:config.changeSpeed});
 					if($cont.children().length>1){
 
-                        $cont.children().eq(0).css('position','absolute').slideIt({direction:oldSlideDir,showHide:'hide',changeSpeed:config.changeSpeed},function(){$(this).remove();});
+                        $cont.children().eq(1).slideIt({direction:newSlideDir,changeSpeed:config.changeSpeed});
+                        $cont.children().eq(0).slideIt({direction:oldSlideDir,showHide:'hide',changeSpeed:config.changeSpeed},function(){$(this).remove();});
 
                     };
 				} else if (config.effect=='fade') {
@@ -300,7 +301,8 @@ speed :				time each slide is shown [integer, milliseconds, defaults to 3000]
 		// merge default global variables with custom variables, modifying 'config'
 		if (settings) $.extend(config, settings);
 		
-		this.each(function(i) {	
+		this.each(function(i) {
+
 			$(this).css({left:'auto',right:'auto',top:'auto',bottom:'auto'});
 			var measurement = (config.direction == 'left') || (config.direction == 'right') ? $(this).outerWidth() : $(this).outerHeight();
             var startStyle = {};
@@ -309,6 +311,7 @@ speed :				time each slide is shown [integer, milliseconds, defaults to 3000]
 			var endStyle = {};
 			endStyle[config.direction] = config.showHide == 'show' ? 0 : '-'+measurement+'px';
             $(this).css(startStyle).animate(endStyle,config.changeSpeed,callback);
+
 		// end .each
 		});
 	
