@@ -3,10 +3,17 @@
 				<div id="inner-footer" class="clearfix">
 
 					<div class="pull-right">
-					  <img src="/wp-content/uploads/icon-linkedin.png" width="24" border="0">
-					  <img src="/wp-content/uploads/icon-facebook.png" width="24" border="0">
-					  <img src="/wp-content/uploads/icon-google.png" width="24" border="0">
-					  <img src="/wp-content/uploads/icon-twitter.png" width="24" border="0">
+				    <a href="https://www.facebook.com/proving" border="0" target="_new">
+                                   <img src="/wp-content/uploads/icon-facebook.png" width="24" border="0"></a>
+                    <a href="https://plus.google.com/u/0/116625911901364822612/about" border="0" target="_new">
+                                   <img src="/wp-content/uploads/icon-google.png" width="24" border="0"></a>
+                    <a href="https://twitter.com/ProvingGrnd" border="0" target="_new">
+                                   <img src="/wp-content/uploads/icon-twitter.png" width="24" border="0"></a>
+                    <a href="http://www.linkedin.com/company/proving-ground-llc" border="0" target="_new">
+					               <img src="/wp-content/uploads/icon-linkedin.png" width="24" border="0"></a>
+
+
+
 					</div>
 			
 					<div id="footer-links-container">

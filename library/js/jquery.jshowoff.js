@@ -322,7 +322,7 @@ speed :				time each slide is shown [integer, milliseconds, defaults to 3000]
                 endStyle[config.direction] = config.showHide == 'show' ? 0 : '-'+measurement+'px';
 
                 var desc = $('#slide-container .desc:last');
-                desc.hide().delay(1500).fadeIn(1000);
+                desc.hide().delay(1500).fadeIn(3000);
 
                 $(this).css(startStyle).animate(endStyle,config.changeSpeed,callback);
             }
