@@ -8,7 +8,7 @@ Template Name: Backpage
 
 			<div id="backpage-content" class="clearfix row-fluid">
 
-				<div id="main" class="span11 clearfix" role="main">
+				<div id="main" class="clearfix" role="main" style="width: 910px;">
 
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
