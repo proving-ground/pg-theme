@@ -42,10 +42,18 @@ function loadCaseStudy(e) {
         },
         success: function(data, textStatus, jqXHR){
             $("#modal-body-container").html(data);
+
+            if($(e).attr('get-slide-index')) {
+                $("#caseCarouselContainer .item").removeClass("active");
+                $("#caseCarouselContainer .item:eq(" + $(e).attr('get-slide-index') + ")").addClass("active");
             }
+
+        }
     });
 
 }
+
+
 
 
 

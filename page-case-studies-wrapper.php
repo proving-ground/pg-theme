@@ -74,5 +74,3 @@ Template Name: Case Study Wrapper
 			</div> <!-- end #content -->
 
 
-
-
