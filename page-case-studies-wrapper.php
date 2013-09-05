@@ -36,7 +36,7 @@ Template Name: Case Study Wrapper
                                     <div class="carousel slide" id="caseCarousel">
                                       <div class="carousel-inner">
 
-                                        <?php query_posts(array('showposts' => 20, 'post_parent' => $this_page_id, 'post_type' => 'page')); while (have_posts()) { the_post(); ?>
+                                        <?php query_posts(array('showposts' => 20, 'post_parent' => $this_page_id, 'post_type' => 'page', 'orderby'=>menu_order,'order'=>ASC)); while (have_posts()) { the_post(); ?>
                                             <?php ++$page_count; ?>
 
                                             <div class="item  <?php if ($page_count==1) echo 'active'; ?>">
