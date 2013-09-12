@@ -612,11 +612,16 @@ if( !function_exists( "theme_js" ) ) {
       get_template_directory_uri() . '/library/js/modernizr.full.min.js', 
       array('jquery'), 
       '1.2' );
+
+    wp_register_script(  'slimscrollelement',
+      get_template_directory_uri() . '/library/js/slimscrollelement.js',
+      array('jquery')  );
   
     //wp_enqueue_script('bootstrap');
     wp_enqueue_script('wpbs-scripts');
     wp_enqueue_script('modernizr');
-    
+    wp_enqueue_script('slimscrollelement');
+
   }
 }
 add_action( 'wp_enqueue_scripts', 'theme_js' );
