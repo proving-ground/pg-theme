@@ -615,7 +615,7 @@ if( !function_exists( "theme_js" ) ) {
 
     wp_register_script(  'slimscrollelement',
       get_template_directory_uri() . '/library/js/slimscrollelement.js',
-      array('jquery')  );
+      array('jquery','jquery-ui-core','jquery-ui-draggable','jquery-ui-droppable')  );
   
     //wp_enqueue_script('bootstrap');
     wp_enqueue_script('wpbs-scripts');
