@@ -126,6 +126,11 @@ jQuery(document).ready(function($) {
 		}
 	});
 
+    $('#modal-body-container').slimScroll({
+        alwaysVisible: false,
+        position: 'right'
+    });
+
 
  
 }); /* end of as page load scripts */
