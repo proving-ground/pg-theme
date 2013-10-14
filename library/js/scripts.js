@@ -127,7 +127,7 @@ jQuery(document).ready(function($) {
 	});
 
     $('#modal-body-container').slimScroll({
-        height: '500px',
+        height: '600px',
         alwaysVisible: false,
         position: 'right'
     });
