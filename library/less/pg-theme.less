@@ -279,46 +279,47 @@ body {
 
 
 /*********** CASE STUDY CAROUSEL ************/
-#caseCarousel {
-  .case-carousel-control.left {
-    background: none;
-    background-image: url("../../images/case-carousel-nav-arrow-left.png");
-    border: 0;
-    border-radius: 0;
-    color: #FFFFFF;
-    font-size: 60px;
-    font-weight: 100;
-    height: 53px;
-    left: auto;
-    right: 199px;
-    line-height: 30px;
-    margin-top: -20px;
-    opacity: 1;
-    position: absolute;
-    text-align: center;
-    top: 20px;
-    width: 190px;
-  }
+#caseCarouselContainer {
+  #caseCarouselControls {
+    width: 90%;
+    height: 30px;
+    border-bottom: 1px #eeeeee solid;
+    margin-top: -15px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .case-carousel-control.left {
+      background: none;
+      //background-image: url("../../images/case-carousel-nav-arrow-left.png");
+      border: 0;
+      border-radius: 0;
+      color: #df1910;
+      font-size: 12px;
+      font-weight: 100;
+      left: auto;
+      line-height: 30px;
+      opacity: 1;
+      text-align: center;
+      top: 20px;
+    }
 
 
-  .case-carousel-control.right {
-    background: none;
-    background-image: url("../../images/case-carousel-nav-arrow-right.png");
-    border: 0;
-    border-radius: 0;
-    color: #FFFFFF;
-    font-size: 60px;
-    font-weight: 100;
-    height: 53px;
-    left: auto;
-    right: 0;
-    line-height: 30px;
-    margin-top: -20px;
-    opacity: 1;
-    position: absolute;
-    text-align: center;
-    top: 20px;
-    width: 197px;
+    .case-carousel-control.right {
+      background: none;
+      //background-image: url("../../images/case-carousel-nav-arrow-right.png");
+      float: right;
+      border: 0;
+      border-radius: 0;
+      color: #df1910;
+      font-size: 12px;
+      font-weight: 100;
+      left: auto;
+      line-height: 30px;
+      opacity: 1;
+      text-align: center;
+      top: 20px;
+    }
   }
 
 

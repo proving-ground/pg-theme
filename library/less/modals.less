@@ -32,7 +32,7 @@
   width: 1000px !important;
   margin-left: auto !important;
   margin-right: auto !important;
-  background-color: #ededed !important;
+  //background-color: #ededed !important;
   border: 1px solid #999;
   border: 1px solid rgba(0,0,0,.3);
   *border: 1px solid #999; /* IE6-7 */
@@ -41,6 +41,22 @@
   .background-clip(padding-box);
   // Remove focus outline from opened modal
   outline: none;
+
+  // Close icon
+  .close {
+
+    background-image: url("../../images/modal_close.png");
+    width: 40px;
+    height: 40px;
+    opacity: 1 !important;
+
+    float: right !important;
+    margin-right: -30px !important;
+    margin-top: -20px !important;
+    margin-left: 980px;
+
+    position: fixed !important;
+  }
 
   &.fade {
     .transition(e('opacity .3s linear, top .3s ease-out'));
@@ -57,8 +73,7 @@
   .clearfix(); // clear it in case folks use .pull-* classes on buttons
 
 
-  // Close icon
-  .close { margin-top: 2px; }
+
   // Heading
   h3 {
     margin: 0;

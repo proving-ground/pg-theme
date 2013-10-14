@@ -29,10 +29,21 @@ Template Name: Case Study Wrapper
 
                             <section class="post_content">
 
+
                                 <?php $this_page_id = $pageid; ?>
                                 <?php $page_count = 0; ?>
 
                                 <div id="caseCarouselContainer" class="row-fluid">
+                                    <div id="caseCarouselControls">
+                                      <!-- Controls -->
+                                      <a class="left case-carousel-control" href="#caseCarousel" data-slide="prev">
+                                        <span class="prev">&lt; Prev Case Study</span>
+                                      </a>
+                                      <a class="right case-carousel-control" href="#caseCarousel" data-slide="next">
+                                        <span class="next">Next Case Study &gt;</span>
+                                      </a>
+                                    </div>
+
                                     <div class="carousel slide" id="caseCarousel">
                                       <div class="carousel-inner">
 
@@ -47,13 +58,7 @@ Template Name: Case Study Wrapper
                                         <?php } ?>
                                     </div>
 
-                                      <!-- Controls -->
-                                      <a class="left case-carousel-control" href="#caseCarousel" data-slide="prev">
-                                        <span class="icon-prev"></span>
-                                      </a>
-                                      <a class="right case-carousel-control" href="#caseCarousel" data-slide="next">
-                                        <span class="icon-next"></span>
-                                      </a>
+
                                 </div>
 
 

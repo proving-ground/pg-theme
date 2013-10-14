@@ -44,22 +44,17 @@
 
        <!-- Modal Container [load content to the .modal-body div]  -->
        <div class="modal fade center" id="myModal" tabindex="-1" role="dialog">
-           <div class="modal-header">
-               <!---<button class="close" type="button" data-dismiss="modal">×</button> --->
-               <div class="header-close">
-                 <a href="javascript:void(0);" data-dismiss="modal">Close Window</a>
-               </div>
-           </div>
+           <button class="close" type="button" data-dismiss="modal"></button>
            <div id="modal-body-container" class="modal-body">
 
 
 
            </div>
-           <div class="modal-footer">
+           <!--- <div class="modal-footer">
                 <div class="footer-close">
                   <a href="javascript:void(0);" data-dismiss="modal">Close Window</a>
                 </div>
-           </div>
+           </div> --->
        </div>
 
 
