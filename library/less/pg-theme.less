@@ -28,7 +28,7 @@ p {
   .case-study-button {
     background-color: #db372f;
     color: #ffffff;
-    padding: 10px 20px;
+    padding: 12px 40px;
     margin-top: 10px;
     border-radius: 6px;
     text-decoration: none;
@@ -45,8 +45,8 @@ p {
   }
 
   .gray-button {
-    background-color: #666666;
-    color: #ffffff;
+    background-color: #f1f1f1;
+    color: #666666;
     padding: 10px 35px;
     margin-top: 10px;
     border-radius: 4px;
@@ -55,7 +55,7 @@ p {
     border: none;
   }
   .gray-button:hover {
-    color: #ffffff;
+    color: #df1910;
     text-decoration: none;
   }
 
@@ -68,6 +68,7 @@ p {
 
     .nav {
       float: right !important;
+      margin: 15px 10px 0 0 !important;
 
       & > li {
         background: none !important;
@@ -101,6 +102,7 @@ p {
         position: absolute !important;
         width: 1024px !important;
         height: 96px;
+        border-top: 2px solid #df1910 !important;
         background: -moz-linear-gradient(top,  rgba(255,255,255,0.75) 84%, rgba(255,255,255,0.32) 92%, rgba(255,255,255,0) 98%, rgba(255,255,255,0) 100%); /* FF3.6+ */
         background: -webkit-gradient(linear, left top, left bottom, color-stop(84%,rgba(255,255,255,0.75)), color-stop(92%,rgba(255,255,255,0.32)), color-stop(98%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
         background: -webkit-linear-gradient(top,  rgba(255,255,255,0.75) 84%,rgba(255,255,255,0.32) 92%,rgba(255,255,255,0) 98%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
@@ -192,7 +194,7 @@ body {
     bottom: 0 !important;
     position: absolute !important;
     width: 100% !important;
-    padding: 0 5px;
+    padding: 0;
 
     a {
       background-position: center;
@@ -283,7 +285,7 @@ body {
 #caseCarouselContainer {
   #caseCarouselControls {
     width: 90%;
-    height: 30px;
+    height: 45px;
     border-bottom: 1px #eeeeee solid;
     margin-top: -15px;
     margin-bottom: 15px;
@@ -293,6 +295,7 @@ body {
     .case-carousel-control.left {
       background: none;
       //background-image: url("../../images/case-carousel-nav-arrow-left.png");
+      float: left;
       border: 0;
       border-radius: 0;
       color: #df1910;
@@ -303,6 +306,7 @@ body {
       opacity: 1;
       text-align: center;
       top: 20px;
+      padding-top: 10px;
     }
 
 
@@ -320,6 +324,7 @@ body {
       opacity: 1;
       text-align: center;
       top: 20px;
+      padding-top: 10px;
     }
   }
 
@@ -346,6 +351,15 @@ body {
     font-size: 12px;
     line-height: 15px;
     margin-bottom: 20px;
+  }
+
+  .excerpt {
+    color: #999999 !important;
+  }
+
+  .more-link {
+    color: #df1910;
+    display: block;
   }
 
   .display-posts-listing {
@@ -395,9 +409,9 @@ body {
   }
 
   .blog-title {
-     color: #df1910;
-    font-size: 32px;
-    font-family: helvetica;
+    color: #999999;
+    font-size: 24px;
+    font-weight: lighter;
 
 //    &:after {
 //      background: url(/wp-content/uploads/icon-blog.png) no-repeat;
