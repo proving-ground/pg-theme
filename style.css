@@ -76,7 +76,7 @@ input, textarea, select, .uneditable-input {
 }
 
 .input-prepend .add-on {
-    height: 30px;
+    height: 20px !important;
 }
 
 .navbar-form, .navbar-search {

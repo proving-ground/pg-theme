@@ -21,7 +21,7 @@
                               </fieldset>
                           </form>
                        </div>
-                       <div class="blog-title">Blog</div>
+                       <div class="blog-title"></div>
                      </div>
 
 
